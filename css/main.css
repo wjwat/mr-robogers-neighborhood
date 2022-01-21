@@ -16,6 +16,10 @@
     --font-color-dark: #f8f8f8;
     --font-color-light: #272727;
     --font-color-med: #6e7075;
+
+    /* Mr. Roboger */
+    --roboger-foreground: green;
+    --roboger-background: black;
   }
 }
 
@@ -43,8 +47,31 @@ fieldset {
   display: none;
 }
 
+#output input {
+  margin: auto;
+  display: block;
+}
+
 footer div p {
   margin-left: auto;
   margin-right: auto;
   text-align: right;
+}
+
+#left-col h2 {
+  text-align: right;
+  margin-top: 0;
+}
+
+#output #left-col {
+  float: left;
+  width: 50%;
+}
+
+#output #right-col {
+  border-radius: 6px;
+  background-color: black;
+  color: green;
+  float: right;
+  width: 50%;
 }

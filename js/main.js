@@ -60,10 +60,10 @@ $(document).ready(function() {
   // Iterates over each item in array and appends it to our output
   function displayNumbers(numArr) {
     toggleDisplays();
-    $(display).children('ol').empty();
+    $(display).find('#mrroboger-says').empty();
 
     numArr.forEach(i => {
-      $(display).children('ol').append(listNumber(i));
+      $(display).find('#mrroboger-says').append(listNumber(i));
     })
     $(display).show();
   }
@@ -74,5 +74,8 @@ $(document).ready(function() {
     displayNumbers(beepBoop(userInput));
   })
 
-  $('#reset-form').on('click', toggleDisplays);
+  $('#reset-form').on('click', function() {
+    $('form').trigger('reset');
+    toggleDisplays();
+  });
 });
