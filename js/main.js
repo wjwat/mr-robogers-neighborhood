@@ -73,5 +73,6 @@ $(document).ready(function() {
     userInput = $('#user-input').val();
     displayNumbers(beepBoop(userInput));
   })
+
   $('#reset-form').on('click', toggleDisplays);
 });

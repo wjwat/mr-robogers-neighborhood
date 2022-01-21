@@ -42,3 +42,9 @@ fieldset {
 #output {
   display: none;
 }
+
+footer div p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
