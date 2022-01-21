@@ -55,6 +55,7 @@ $(document).ready(function() {
   function toggleDisplays() {
     $(input).toggle();
     $(display).toggle();
+    $('#lilguy').toggle();
   }
 
   // Iterates over each item in array and appends it to our output

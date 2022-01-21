@@ -43,6 +43,26 @@ fieldset {
   border: none;
 }
 
+ul {
+  padding-left: 0;
+  margin-left: 1px;
+  list-style-type: none;
+}
+
+li {
+  line-height: 1.25rem;
+  margin: 0;
+}
+
+footer {
+  min-height: 5em;
+}
+
+footer div p {
+  margin: auto;
+  text-align: right;
+}
+
 #output {
   display: none;
 }
@@ -52,12 +72,6 @@ fieldset {
   display: block;
   background-color: var(--roboger-background);
   color: var(--roboger-foreground);
-}
-
-footer div p {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: right;
 }
 
 #left-col h2 {
@@ -79,12 +93,10 @@ footer div p {
   padding-left: 1em;
 }
 
-#right-col ul {
-  padding-left: 0;
-  margin-left: 1px;
-  list-style-type: none;
-}
-
 #right-col ul > li:before {
   content: "> ";
+}
+
+#lilguy:hover:after {
+  content: " <[GIVE ME NUMBERS.]"
 }
