@@ -12,6 +12,12 @@ Test: "It should return an error message if input is not a valid positive intege
 Code: beepBoop('123.1')
 Expected Return Value: ["Please input a valid number."]
 
-Test: "It should always return an array with a length that is equal to the value inputted plus one."
+Test: "It should always return an array with a length that is equal to the value inputted plus one, and
+       containing values from 0 to our inputted value."
 Code: beepBoop(5)
 Expected Return Value: [0, 1, 2, 3, 4, 5]
+
+Test: "If as we iterate an insert value contains 3 then insert the phrase
+       'Won't you be my neighbor?' into the array at that spot."
+Code: beepBoop(5)
+Expected Return Value: [0, 1, 2, 'Won't you be my neighbor?', 4, 5]
