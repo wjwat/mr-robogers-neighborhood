@@ -29,7 +29,7 @@ function beepBoop(userInput) {
   }
 
   // Always loop num+1 to correctly size our output
-  for (i = 0; i < num+1; i++) {
+  for (let i = 0; i < num+1; i++) {
     if (i.toString().indexOf('3') > -1) {
       outputArray.push("Won't you be my neighbor?");
     } else if (i.toString().indexOf('2') > -1) {
@@ -49,8 +49,9 @@ $(document).ready(function() {
   // Assign display selector to a variable because we're going to use
   // it in multiple places and what we're selecting may change
   // as we refactor.
-  display = $('#output');
-  input = $('#input');
+  let display = $('#output');
+  let input = $('#input');
+  let ordering = '';
 
   function toggleDisplays() {
     $(input).toggle();
@@ -69,10 +70,19 @@ $(document).ready(function() {
     $(display).show();
   }
 
+  $('button[type=submit').on('click', function(e) {
+    ordering = this.name;
+  })
+
   $('form').on('submit', function(e) {
     e.preventDefault();
-    userInput = $('#user-input').val();
-    displayNumbers(beepBoop(userInput));
+    let userInput = $('#user-input').val();
+
+    if (ordering === 'reverse') {
+      displayNumbers(beepBoop(userInput).reverse());
+    } else {
+      displayNumbers(beebBoop(userInput));
+    }
   })
 
   $('#reset-form').on('click', function() {
