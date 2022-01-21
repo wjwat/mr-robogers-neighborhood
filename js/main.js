@@ -2,6 +2,7 @@
 
 // This works for most of what we care about.
 // An edge case though is if the val has a trailing .
+// ex: isNotNumber('123.') -> true
 function isNotNumber(val) {
   return !(/^\d+$/.test(val))
 }
@@ -26,9 +27,11 @@ function beepBoop(userInput) {
   // Always loop num+1 to correctly size our output
   for (i = 0; i < num+1; i++) {
     if (i.toString().indexOf('3') > -1) {
-      outputArray.push("Won't you be my neighbor?")
+      outputArray.push("Won't you be my neighbor?");
     } else if (i.toString().indexOf('2') > -1) {
-      outputArray.push('Boop!')
+      outputArray.push('Boop!');
+    } else if (i.toString().indexOf('1') > -1) {
+      outputArray.push('Beep!');
     } else {
       outputArray.push(i);
     }
