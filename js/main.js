@@ -52,10 +52,14 @@ $(document).ready(function() {
   display = $('#output');
   input = $('#input');
 
-  // Iterates over each item in array and appends it to our output
-  function displayNumbers(numArr) {
+  function toggleDisplays() {
     $(input).toggle();
     $(display).toggle();
+  }
+
+  // Iterates over each item in array and appends it to our output
+  function displayNumbers(numArr) {
+    toggleDisplays();
     $(display).children('ol').empty();
 
     numArr.forEach(i => {
@@ -69,5 +73,5 @@ $(document).ready(function() {
     userInput = $('#user-input').val();
     displayNumbers(beepBoop(userInput));
   })
-  //$('')
+  $('#reset-form').on('click', toggleDisplays);
 });
