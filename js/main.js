@@ -7,7 +7,7 @@ function isNotNumber(val) {
   return !(/^\d+$/.test(val))
 }
 
-function prettyNumber(value) {
+function listNumber(value) {
   return `<li>${value}</li>`
 }
 
@@ -63,7 +63,7 @@ $(document).ready(function() {
     $(display).children('ol').empty();
 
     numArr.forEach(i => {
-      $(display).children('ol').append(prettyNumber(i));
+      $(display).children('ol').append(listNumber(i));
     })
     $(display).show();
   }
