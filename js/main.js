@@ -1,3 +1,11 @@
+// UTILITY LOGIC
+
+// This works for most of what we care about.
+// An edge case though is if the val has a trailing .
+function isNotNumber(val) {
+  return !(/^\d+$/.test(val))
+}
+
 // BUSINESS LOGIC
 
 // Return an array constructed using the following constraints that our
@@ -10,7 +18,7 @@ function beepBoop(userInput) {
   // XXX '2.5' -> 2, Is this the desired behavior when given a float?
   let num = parseInt(userInput)
 
-  if (num <= 0) {
+  if (num != 0 || isNotNumber(userInput)) {
     return ["Please input a valid number."]
   }
 }
