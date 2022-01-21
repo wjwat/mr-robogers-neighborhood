@@ -38,3 +38,7 @@ body {
 fieldset {
   border: none;
 }
+
+#output {
+  display: none;
+}
