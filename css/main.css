@@ -20,6 +20,19 @@
   }
 }
 
+@media screen and (max-width:600px){
+  h2 {
+    font-size: 1.25rem !important;
+  }
+  #reset-form {
+    font-size: .75rem;
+  }
+  li {
+    line-height: .8rem !important;
+    font-size: .75rem;
+  }
+}
+
 :root {
   --roboger-foreground: #39ff14;
   --roboger-background: black;
@@ -85,6 +98,7 @@ footer div p {
 }
 
 #right-col {
+  border: 5px solid gray;
   border-radius: 6px;
   background-color: var(--roboger-background);
   color: var(--roboger-foreground);
