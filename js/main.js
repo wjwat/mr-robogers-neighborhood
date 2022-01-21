@@ -27,6 +27,8 @@ function beepBoop(userInput) {
   for (i = 0; i < num+1; i++) {
     if (i.toString().indexOf('3') > -1) {
       outputArray.push("Won't you be my neighbor?")
+    } else if (i.toString().indexOf('2') > -1) {
+      outputArray.push('Boop!')
     } else {
       outputArray.push(i);
     }
