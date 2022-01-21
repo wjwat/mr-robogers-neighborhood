@@ -17,13 +17,13 @@
     --font-color-light: #272727;
     --font-color-med: #6e7075;
 
-    /* Mr. Roboger */
-    --roboger-foreground: green;
-    --roboger-background: black;
   }
 }
 
 :root {
+  --roboger-foreground: #39ff14;
+  --roboger-background: black;
+
   --font-family: 'Roboto Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -50,6 +50,8 @@ fieldset {
 #output input {
   margin: auto;
   display: block;
+  background-color: var(--roboger-background);
+  color: var(--roboger-foreground);
 }
 
 footer div p {
@@ -63,15 +65,26 @@ footer div p {
   margin-top: 0;
 }
 
-#output #left-col {
+#left-col {
   float: left;
   width: 50%;
 }
 
-#output #right-col {
+#right-col {
   border-radius: 6px;
-  background-color: black;
-  color: green;
+  background-color: var(--roboger-background);
+  color: var(--roboger-foreground);
   float: right;
   width: 50%;
+  padding-left: 1em;
+}
+
+#right-col ul {
+  padding-left: 0;
+  margin-left: 1px;
+  list-style-type: none;
+}
+
+#right-col ul > li:before {
+  content: "> ";
 }
