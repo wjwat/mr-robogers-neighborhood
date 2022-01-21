@@ -7,8 +7,8 @@ function isNotNumber(val) {
   return !(/^\d+$/.test(val))
 }
 
-function listNumber(value) {
-  return `<li>${value}</li>`
+function listNumber(value, index) {
+  return `<li title="${index}">${value}</li>`
 }
 
 // BUSINESS LOGIC
@@ -63,8 +63,8 @@ $(document).ready(function() {
     toggleDisplays();
     $(display).find('#mrroboger-says').empty();
 
-    numArr.forEach(i => {
-      $(display).find('#mrroboger-says').append(listNumber(i));
+    numArr.forEach((e, i) => {
+      $(display).find('#mrroboger-says').append(listNumber(e, i));
     })
     $(display).show();
   }
