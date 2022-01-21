@@ -37,7 +37,7 @@
   --roboger-foreground: #39ff14;
   --roboger-background: black;
 
-  --font-family: 'Roboto Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family: 'Roboto Mono', monospace, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main, body > header div {
