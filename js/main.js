@@ -16,10 +16,11 @@ function isNotNumber(val) {
 // Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
 function beepBoop(userInput) {
   // XXX '2.5' -> 2, Is this the desired behavior when given a float?
-  let num = parseInt(userInput)
+  let num = parseInt(userInput);
+  let outputArray = [];
 
-  if (num != 0 || isNotNumber(userInput)) {
-    return ["Please input a valid number."]
+  if (num <= 0 || isNotNumber(userInput)) {
+    return ["Please input a valid number."];
   }
 }
 
