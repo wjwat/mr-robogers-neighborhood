@@ -81,7 +81,7 @@ $(document).ready(function() {
     if (ordering === 'reverse') {
       displayNumbers(beepBoop(userInput).reverse());
     } else {
-      displayNumbers(beebBoop(userInput));
+      displayNumbers(beepBoop(userInput));
     }
   })
 
