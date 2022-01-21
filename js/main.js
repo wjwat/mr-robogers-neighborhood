@@ -22,6 +22,13 @@ function beepBoop(userInput) {
   if (num <= 0 || isNotNumber(userInput)) {
     return ["Please input a valid number."];
   }
+
+  // Always loop num+1 to correctly size our output
+  for (i = 0; i < num+1; i++) {
+    outputArray.push(i);
+  }
+  
+  return outputArray;
 }
 
 // UI LOGIC
