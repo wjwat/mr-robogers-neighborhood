@@ -25,7 +25,11 @@ function beepBoop(userInput) {
 
   // Always loop num+1 to correctly size our output
   for (i = 0; i < num+1; i++) {
-    outputArray.push(i);
+    if (i.toString().indexOf('3') > -1) {
+      outputArray.push("Won't you be my neighbor?")
+    } else {
+      outputArray.push(i);
+    }
   }
   
   return outputArray;
