@@ -7,6 +7,10 @@ function isNotNumber(val) {
   return !(/^\d+$/.test(val))
 }
 
+function prettyNumber(value) {
+  return `<li>${value}</li>`
+}
+
 // BUSINESS LOGIC
 
 // Return an array constructed using the following constraints that our
@@ -42,5 +46,28 @@ function beepBoop(userInput) {
 
 // UI LOGIC
 $(document).ready(function() {
-  // Do something
+  // Assign display selector to a variable because we're going to use
+  // it in multiple places and what we're selecting may change
+  // as we refactor.
+  display = $('#output');
+  input = $('#input');
+
+  // Iterates over each item in array and appends it to our output
+  function displayNumbers(numArr) {
+    $(input).toggle();
+    $(display).toggle();
+    $(display).children('ol').empty();
+
+    numArr.forEach(i => {
+      $(display).children('ol').append(prettyNumber(i));
+    })
+    $(display).show();
+  }
+
+  $('form').on('submit', function(e) {
+    e.preventDefault();
+    userInput = $('#user-input').val();
+    displayNumbers(beepBoop(userInput));
+  })
+  //$('')
 });
