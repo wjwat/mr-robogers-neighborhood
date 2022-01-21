@@ -26,3 +26,8 @@ Test: "If as we iterate an insert value contains 2 and does not contain 3 then i
        phrase 'Boop!' into the array at that spot."
 Code: beepBoop(5)
 Expected Return Value: [0, 1, 'Boop!', 'Won't you be my neighbor?', 4, 5]
+
+Test: "If as we iterate an insert value contains 1 and does not contain 2 or 3 then insert
+       the phrase 'Beep!' into the array at that spot."
+Code: beepBoop(5)
+Expected Return Value: [0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5]
