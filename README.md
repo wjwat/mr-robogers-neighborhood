@@ -33,7 +33,7 @@ Mr. Roboger is hungry for numbers and wants you to give him some. Give him a num
 - If you'd like to reset all your answers before you `Submit` hit the `Reset` button
 - If you'd you like you can feed Mr. Roboger a number again by hitting the `GIVE ME MORE NUMBERS` button
 
-## Specifications
+## :clipboard: Specifications
 
 ### beepBoop()
 
