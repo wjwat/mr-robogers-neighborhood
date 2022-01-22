@@ -70,6 +70,7 @@ $(document).ready(function() {
     $(display).show();
   }
 
+  // Determine which was button was used to submit
   $('button[type=submit').on('click', function(e) {
     ordering = this.name;
   })
@@ -85,6 +86,8 @@ $(document).ready(function() {
     }
   })
 
+  // Clear any previously inputted values, and take us back
+  // to the default page state.
   $('#reset-form').on('click', function() {
     $('form').trigger('reset');
     toggleDisplays();
