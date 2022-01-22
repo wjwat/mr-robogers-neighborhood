@@ -16,19 +16,22 @@
 
 Mr. Roboger is hungry for numbers and wants you to give him some. Give him a number and see what he says about it. Some of them he likes more than others!
 
-## :gear: Setup/Installation Requirements
+## :gear: Setup/Installation & Usage Instructions
 
 - Go to https://wjwat.github.io/mr-robogers-neighborhood/ in any modern browser.
-- Submit a number to Mr. Roboger.
-- Click the `Submit` button to have Mr. Roboger read back to you all the numbers up to the one you gave him.
-- If you'd like to reset all your answers before you `Submit` hit the `Reset` button
-- If you'd you like you can feed Mr. Roboger a number again by hitting the `GIVE ME MORE NUMBERS` button
 
 *or*
 
 - [Clone this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to your device
 - Using the [file manager](https://www.lifewire.com/what-is-a-file-manager-4589189) on your system browse to where you've cloned the repo
 - Open `index.html` using your file manager and a browser of your choice
+
+*then*
+
+- Submit a number to Mr. Roboger.
+- Click the `Submit` button to have Mr. Roboger read back to you all the numbers up to the one you gave him.
+- If you'd like to reset all your answers before you `Submit` hit the `Reset` button
+- If you'd you like you can feed Mr. Roboger a number again by hitting the `GIVE ME MORE NUMBERS` button
 
 ## Specifications
 
