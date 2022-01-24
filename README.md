@@ -48,7 +48,8 @@ Mr. Roboger is hungry for numbers and wants you to give him some. Give him a num
 
 ## :lady_beetle: Known Bugs
 
-* No known issues, but if any are found please feel free to open an issue or email me at wjwat at onionslice dot org
+* Title is not correctly set for list items when using the reverse function.
+* If any others are found please feel free to open an issue or email me at wjwat at onionslice dot org
 
 ## :warning: License
 
