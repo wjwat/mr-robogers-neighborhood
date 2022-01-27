@@ -17,12 +17,12 @@ function beepBoop(userInput) {
   let outputArray = [];
 
   if (num <= 0 || isNotNumber(num)) {
-    return ["Please input a valid number."];
+    return ['Please input a valid number.'];
   }
 
   for (let i = 0; i < num+1; i++) {
     if (i.toString().indexOf('3') > -1) {
-      outputArray.push("Won't you be my neighbor?");
+      outputArray.push('Won\'t you be my neighbor?');
     } else if (i.toString().indexOf('2') > -1) {
       outputArray.push('Boop!');
     } else if (i.toString().indexOf('1') > -1) {
@@ -58,7 +58,7 @@ $(document).ready(function() {
   }
 
   // Determine which was button was used to submit
-  $('button[type=submit').on('click', function(e) {
+  $('button[type=submit').on('click', function() {
     ordering = this.name;
   });
 
