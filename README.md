@@ -46,6 +46,19 @@ Mr. Roboger is hungry for numbers and wants you to give him some. Give him a num
 | If any iterated value contains 2 and does not contain 3 then insert the phrase 'Boop!' into the array at that spot.                   | beepBoop(5)       | [0, 1, 'Boop!', 'Won't you be my neighbor?', 4, 5] |
 | If any iterated value contains 1 and does not contain 2 or 3 then insert the phrase 'Beep!' into the array at that spot.              | beepBoop(5)       | [0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5] |
 
+### isNotNumber()
+
+| Test | Code | Expected Return Value |
+| ---- | ---- | --------------------- |
+| Returns false when passed in a number | isNotNumber(123) | false |
+| Returns true when passed in any value other than a number | isNotNumber('abc'), isNotNumber('1b3'), isNotNumber([123]) | true |
+
+### listNumber()
+
+| Test | Code | Expected Return Value |
+| ---- | ---- | --------------------- |
+| Return a html snippet containing the two passed in values as a list item (\<li>) | listNumber('Boop!', 2) | \<li title="2">Boop!\</li> |
+
 ## :lady_beetle: Known Bugs
 
 * Title is not correctly set for list items when using the reverse function.
