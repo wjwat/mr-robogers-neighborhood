@@ -4,11 +4,11 @@
 // An edge case though is if the val has a trailing .
 // ex: isNotNumber('123.') -> true
 function isNotNumber(val) {
-  return !(/^\d+$/.test(val))
+  return !(/^\d+$/.test(val));
 }
 
 function listNumber(value, index) {
-  return `<li title="${index}">${value}</li>`
+  return `<li title="${index}">${value}</li>`;
 }
 
 // BUSINESS LOGIC
@@ -59,21 +59,20 @@ $(document).ready(function() {
     $('#lilguy').toggle();
   }
 
-  // Iterates over each item in array and appends it to our output
   function displayNumbers(numArr) {
     toggleDisplays();
     $(display).find('#mrroboger-says').empty();
 
     numArr.forEach((e, i) => {
       $(display).find('#mrroboger-says').append(listNumber(e, i));
-    })
+    });
     $(display).show();
   }
 
   // Determine which was button was used to submit
   $('button[type=submit').on('click', function(e) {
     ordering = this.name;
-  })
+  });
 
   $('form').on('submit', function(e) {
     e.preventDefault();
@@ -84,7 +83,7 @@ $(document).ready(function() {
     } else {
       displayNumbers(beepBoop(userInput));
     }
-  })
+  });
 
   // Clear any previously inputted values, and take us back
   // to the default page state.
