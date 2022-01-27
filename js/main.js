@@ -2,7 +2,10 @@
 // An edge case though is if the val has a trailing .
 // ex: isNotNumber('123.') -> true
 function isNotNumber(val) {
-  return !(/^\d+$/.test(val));
+  if (typeof(val) === 'string' || typeof(val) === 'number') {
+    return !(/^\d+$/.test(val));
+  }
+  return true;
 }
 
 function listNumber(value, index) {
@@ -13,7 +16,7 @@ function beepBoop(userInput) {
   let num = parseInt(userInput);
   let outputArray = [];
 
-  if (num <= 0 || isNotNumber(userInput)) {
+  if (num <= 0 || isNotNumber(num)) {
     return ["Please input a valid number."];
   }
 
